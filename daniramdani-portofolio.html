@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dani Ramdani - Portfolio & Pre-Press Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#06b6d4',
+                            accent: '#3b82f6'
+                        },
+                        dark: {
+                            textMuted: '#94a3b8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glass-nav { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(16px); }
+        .gradient-text { background: linear-gradient(135deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+            />
+          </div>
+          <!-- ... existing project details ... -->
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="bg-slate-800/80 rounded-2xl overflow-hidden border border-slate-700/50 hover:border-blue-500/50 transition duration-300">
+          <div class="h-48 overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
+              alt="E-Commerce Platform" 
+              onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/64748b?text=Project+Preview';"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <!-- ... existing project details ... -->
+        </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white p-2 focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden glass-nav border-t border-white/10 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-brand-500 py-1" onclick="toggleMenu()">Tentang Saya</a>
+            <a href="#projects" class="block text-slate-300 hover:text-brand-500 py-1" onclick="toggleMenu()">Portofolio Proyek</a>
+            <a href="#experience" class="block text-slate-300 hover:text-brand-500 py-1" onclick="toggleMenu()">Pengalaman</a>
+            <a href="#skills" class="block text-slate-300 hover:text-brand-500 py-1" onclick="toggleMenu()">Keahlian</a>
+            <a href="#awards" class="block text-slate-300 hover:text-brand-500 py-1" onclick="toggleMenu()">Penghargaan</a>
+            <a href="#organization" class="block text-slate-300 hover:text-brand-500 py-1" onclick="toggleMenu()">Organisasi</a>
+            <button onclick="openModal(); toggleMenu();" class="w-full mt-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-accent text-slate-950 font-semibold flex items-center justify-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4"></i> Hubungi Saya
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center pt-24 pb-16 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-brand-500 text-xs font-semibold tracking-wide uppercase border border-brand-500/20">
+                        <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+                        Graphic Designer & Print Production Expert
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                        Halo, Saya <br class="hidden sm:inline" />
+                        <span class="gradient-text">Dani Ramdani</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Lulusan <strong class="text-white">S1 Teknik Informatika</strong> dengan pengalaman 5+ tahun di bidang <strong class="text-white">Desain Grafis, Operasional Percetakan, & Layout Infografis</strong>. Terbiasa mengolah ide kreatif menjadi produk cetak dan komunikasi visual bernilai tinggi.
+                    </p>
+                    
+                    <div class="pt-4 flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <a href="#projects" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-accent text-slate-950 font-bold hover:shadow-glow transition-all flex items-center gap-2">
+                            <i data-lucide="layout-grid" class="w-5 h-5"></i> Lihat Portofolio
+                        </a>
+                        <a href="https://wa.me/628382547239" target="_blank" class="px-6 py-3.5 rounded-xl glass-card text-slate-200 font-semibold hover:bg-white/10 transition-all flex items-center gap-2">
+                            <i data-lucide="message-square" class="w-5 h-5"></i> WhatsApp Direct
+                        </a>
+                    </div>
+
+                    <div class="pt-8 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-4 text-left">
+                        <div class="p-3 rounded-lg bg-slate-900/40 border border-white/5">
+                            <p class="text-xs text-dark-textMuted">Lokasi</p>
+                            <p class="text-sm font-semibold text-slate-200 flex items-center gap-1 mt-1">
+                                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-500"></i> Bandung, ID
+                            </p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/40 border border-white/5">
+                            <p class="text-xs text-dark-textMuted">Pendidikan</p>
+                            <p class="text-sm font-semibold text-slate-200 flex items-center gap-1 mt-1">
+                                <i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-brand-accent"></i> S1 Informatika
+                            </p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/40 border border-white/5 col-span-2 sm:col-span-1">
+                            <p class="text-xs text-dark-textMuted">Keahlian Utama</p>
+                            <p class="text-sm font-semibold text-slate-200 flex items-center gap-1 mt-1">
+                                <i data-lucide="palette" class="w-3.5 h-3.5 text-brand-500"></i> Pre-Press & Design
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-88 sm:w-80 sm:h-96 group">
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-500 to-brand-accent blur-lg opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                        <div class="relative w-full h-full rounded-2xl overflow-hidden glass-card p-2 border border-white/20">
+                            <img src="https://placehold.co/400x500/121a2d/06b6d4?text=Dani+Ramdani" 
+                                 alt="Dani Ramdani" 
+                                 class="w-full h-full object-cover rounded-xl filter grayscale group-hover:grayscale-0 transition duration-500"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/400x500/121a2d/ffffff?text=Dani+Ramdani';">
+                            <div class="absolute bottom-4 left-4 right-4 p-3 rounded-xl glass-card backdrop-blur-md bg-slate-950/80 border border-white/10 text-center">
+                                <p class="text-xs font-medium text-brand-500">Supervisor & Graphic Designer</p>
+                                <p class="text-xs text-slate-300">Jujur • Disiplin • Adaptif</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-500 text-sm font-semibold tracking-wider uppercase">Galeri Karya</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Portofolio Desain & Percetakan</h2>
+                <p class="text-dark-textMuted mt-2">Kumpulan proyek nyata yang pernah saya kerjakan, mulai dari spanduk bisnis, apparel, kemasan/paperbag, merchandise, hingga infografis kesehatan.</p>
+
+                <!-- Project Filters -->
+                <div class="flex flex-wrap justify-center gap-2 mt-8">
+                    <button onclick="filterProjects('all')" id="pbtn-all" class="p-btn active-pbtn px-4 py-2 rounded-xl text-xs font-semibold bg-brand-500 text-slate-950 transition-all">
+                        Semua Karya (9)
+                    </button>
+                    <button onclick="filterProjects('banner')" id="pbtn-banner" class="p-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card text-slate-300 hover:text-white transition-all">
+                        Spanduk & Promo
+                    </button>
+                    <button onclick="filterProjects('merch')" id="pbtn-merch" class="p-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card text-slate-300 hover:text-white transition-all">
+                        Apparel & Merch
+                    </button>
+                    <button onclick="filterProjects('packaging')" id="pbtn-packaging" class="p-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card text-slate-300 hover:text-white transition-all">
+                        Kemasan & Paperbag
+                    </button>
+                    <button onclick="filterProjects('infographic')" id="pbtn-infographic" class="p-btn px-4 py-2 rounded-xl text-xs font-semibold glass-card text-slate-300 hover:text-white transition-all">
+                        Infografis Edukasi
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                
+                <!-- Project 1: Warung Rida & Laundry -->
+                <div class="project-item banner glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/9] bg-gradient-to-br from-red-900/80 to-red-950 flex items-center justify-center p-4 border-b border-white/10">
+                        <div class="text-center">
+                            <span class="inline-block px-3 py-1 rounded bg-red-600 text-white font-extrabold text-sm mb-2 shadow">WARUNG RIDA YUNENGSIH</span>
+                            <div class="flex items-center justify-center gap-2 text-xs text-yellow-300 font-bold">
+                                <span>MAKANAN & MINUMAN</span> • <span>LAUNDRY PAKAIAN</span>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button onclick="openProjectModal('Warung Rida Yunengsih & Laundry', 'Spanduk Promosi Kuliner & Jasa', 'CorelDRAW / FlexiPrint', 'Spanduk baliho besar dengan tata letak menu kuliner (Nasi Goreng, Seblak, dll) di bagian atas dan jasa laundry pakaian di bagian bawah. Menggunakan skema warna merah menyala yang kontras untuk menarik perhatian pengunjung.')" class="px-4 py-2 rounded-lg bg-brand-500 text-slate-950 text-xs font-bold flex items-center gap-2">
+                                <i data-lucide="eye" class="w-4 h-4"></i> Detail Proyek
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-red-500/20 text-red-400 border border-red-500/30">Spanduk / Banner</span>
+                            <span class="text-xs text-slate-400">Flexi Outdoor</span>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">Warung Rida Yunengsih & Laundry</h3>
+                        <p class="text-slate-300 text-xs mt-2 line-clamp-2">Desain spanduk outdoor lengkap dengan katalog menu makanan, minuman, serta layanan laundry pakaian.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: drd.cloth Jatinangor -->
+                <div class="project-item merch glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/9] bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-4 border-b border-white/10">
+                        <div class="text-center">
+                            <p class="text-red-500 font-black text-lg tracking-widest">DRD.CLOTH</p>
+                            <p class="text-white font-bold text-xs">JATINANGOR STREETWEAR</p>
+                            <p class="text-slate-400 text-[10px] mt-1">6 Mockup T-Shirt Series</p>
+                        </div>
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button onclick="openProjectModal('drd.cloth - Jatinangor Apparel Line', 'Desain Mockup T-Shirt / Merch', 'Adobe Photoshop / Illustrator', 'Koleksi 6 varian desain kaos hitam bertema lokal Jatinangor dengan sentuhan streetwear modern: Never Sleep Jatinangor, State of Mind, Jatinangor Est In, The Las Vegas, drd.cloth logo, dan Lost In Jatinangor.')" class="px-4 py-2 rounded-lg bg-brand-500 text-slate-950 text-xs font-bold flex items-center gap-2">
+                                <i data-lucide="eye" class="w-4 h-4"></i> Detail Proyek
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">Apparel / Clothing</span>
+                            <span class="text-xs text-slate-400">Sablon / Digital</span>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">drd.cloth - Jatinangor Series</h3>
+                        <p class="text-slate-300 text-xs mt-2 line-clamp-2">Perancangan tipografi & fotografi layout kaos t-shirt streetwear bertema lokalitas Jatinangor.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: Paperbag Saiberia & DSP -->
+                <div class="project-item packaging glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/9] bg-gradient-to-br from-sky-900 to-slate-900 flex items-center justify-center p-4 border-b border-white/10">
+                        <div class="text-center space-y-1">
+                            <span class="px-2 py-1 rounded bg-sky-500/20 text-sky-300 text-xs font-bold border border-sky-400/30">SAIBERIA Cyber Security</span>
+                            <br>
+                            <span class="px-2 py-1 rounded bg-orange-500/20 text-orange-300 text-xs font-bold border border-orange-400/30">DIGITAL SOLUSI PRIMA</span>
+                        </div>
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button onclick="openProjectModal('Paperbag Branding - Saiberia & DSP', 'Desain Paper Bag Perusahaan', 'CorelDRAW / Photoshop', 'Layout visual paperbag hitam elegan tampak depan (Saiberia Cyber Security Solutions) dan tampak belakang (Digital Solusi Prima) untuk merchandise corporate & seminar kit.')" class="px-4 py-2 rounded-lg bg-brand-500 text-slate-950 text-xs font-bold flex items-center gap-2">
+                                <i data-lucide="eye" class="w-4 h-4"></i> Detail Proyek
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-sky-500/20 text-sky-400 border border-sky-500/30">Paperbag / Packaging</span>
+                            <span class="text-xs text-slate-400">Corporate Kit</span>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">Paper Bag Saiberia & DSP</h3>
+                        <p class="text-slate-300 text-xs mt-2 line-clamp-2">Desain tas kertas eksklusif dua sisi untuk perusahan cyber security dan teknologi informasi.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4: Juragan Wadi Amplang -->
+                <div class="project-item packaging glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/9] bg-gradient-to-br from-red-800 to-yellow-950 flex items-center justify-center p-4 border-b border-white/10">
+                        <div class="text-center">
+                            <p class="text-yellow-400 font-black text-base">JURAGAN WADI</p>
+                            <p class="text-white font-bold text-xs">PAKET AMPLANG ISI 10</p>
+                            <p class="text-slate-300 text-[10px] mt-1">Oleh-Oleh Khas Kota Sampit</p>
+                        </div>
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button onclick="openProjectModal('Juragan Wadi - Kemasan Amplang', 'Desain Packaging & Label Makanan', 'CorelDRAW / Photoshop', 'Kemasan paper bag / gift box produk oleh-oleh khas Kota Sampit Kalimantan Tengah. Dilengkapi informasi nutrisi, sertifikasi Halal ID, nomor P-IRT, dan ilustrasi renyah gurih.')" class="px-4 py-2 rounded-lg bg-brand-500 text-slate-950 text-xs font-bold flex items-center gap-2">
+                                <i data-lucide="eye" class="w-4 h-4"></i> Detail Proyek
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Packaging Design</span>
+                            <span class="text-xs text-slate-400">UMKM Kuliner</span>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">Kemasan Amplang Juragan Wadi</h3>
+                        <p class="text-slate-300 text-xs mt-2 line-clamp-2">Desain packaging produk oleh-oleh khas Kalimantan lengkap dengan detail P-IRT dan Halal.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5: Evol Tote Bag Custom -->
+                <div class="project-item merch packaging glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/9] bg-gradient-to-br from-pink-900/60 to-rose-950 flex items-center justify-center p-4 border-b border-white/10">
+                        <div class="text-center">
+                            <p class="text-white font-black text-2xl tracking-wider">evol</p>
+                            <p class="text-rose-300 text-xs font-semibold mt-1">Plaid Pattern Fabric Tote</p>
+                        </div>
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button onclick="openProjectModal('Evol Custom Tote Bag Design', 'Pattern Design & Merchandise', 'Adobe Photoshop / Illustrator', 'Perancangan pola kotak-kotak (plaid pattern) nuansa pink-terakota dengan tipografi tebal logo EVOL untuk tas kain / tote bag fashion wanita.')" class="px-4 py-2 rounded-lg bg-brand-500 text-slate-950 text-xs font-bold flex items-center gap-2">
+                                <i data-lucide="eye" class="w-4 h-4"></i> Detail Proyek
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-pink-500/20 text-pink-400 border border-pink-500/30">Fashion / Merchandise</span>
+                            <span class="text-xs text-slate-400">Pattern & Bag</span>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">Evol Custom Tote Bag</h3>
+                        <p class="text-slate-300 text-xs mt-2 line-clamp-2">Pengembangan motif kotak-kotak kustom dan cetak tas tote bag kain fashion.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6: Kalender Foto Keluarga 2027 -->
+                <div class="project-item merch glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/9] bg-gradient-to-br from-amber-950 to-stone-900 flex items-center justify-center p-4 border-b border-white/10">
+                        <div class="text-center">
+                            <p class="text-amber-400 font-extrabold text-xl">KALENDER 2027</p>
+                            <p class="text-white text-xs font-medium">Custom Photo Wall Calendar</p>
+                        </div>
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button onclick="openProjectModal('Kalender Custom Dinding 2027', 'Merchandise Cetak / Foto Layout', 'CorelDRAW / InDesign', 'Desain kalender dinding edisi 2027 dengan tata letak foto keluarga & bayi kustom. Pengaturan penanggalan triwulan rapi dan cetak kertas Art Paper premium.')" class="px-4 py-2 rounded-lg bg-brand-500 text-slate-950 text-xs font-bold flex items-center gap-2">
+                                <i data-lucide="eye" class="w-4 h-4"></i> Detail Proyek
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-purple-500/20 text-purple-400 border border-purple-500/30">Media Cetak</span>
+                            <span class="text-xs text-slate-400">Kalender Custom</span>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">Kalender Dinding Foto 2027</h3>
+                        <p class="text-slate-300 text-xs mt-2 line-clamp-2">Layouting penanggalan tahunan interaktif dipadukan dengan dokumentasi foto keluarga.</p>
+                    </div>
+                </div>
+
+                <!-- Project 7: DRD Poster Premium MDF -->
+                <div class="project-item merch banner glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/9] bg-gradient-to-br from-zinc-900 to-black flex items-center justify-center p-4 border-b border-white/10">
+                        <div class="text-center">
+                            <p class="text-brand-500 font-bold text-xs">DRD PRINTING SOLUTION</p>
+                            <p class="text-white font-extrabold text-sm mt-1">POSTER BAND MDF 6MM</p>
+                            <p class="text-slate-400 text-[10px]">Oasis & Avenged Sevenfold</p>
+                        </div>
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button onclick="openProjectModal('DRD Poster Premium Bingkai MDF', 'Wall Decor & High-Res Printing', 'Photoshop / Pre-Press', 'Cetak poster musik band terkenal (Oasis & Avenged Sevenfold) dengan media papan MDF tebal 6 mm ukuran 15x20 cm serta pilihan laminasi Glossy / Doft berkualitas anti air.')" class="px-4 py-2 rounded-lg bg-brand-500 text-slate-950 text-xs font-bold flex items-center gap-2">
+                                <i data-lucide="eye" class="w-4 h-4"></i> Detail Proyek
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-brand-500/20 text-brand-400 border border-brand-500/30">Hiasan Dinding</span>
+                            <span class="text-xs text-slate-400">MDF 6mm</span>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">Poster Premium Bingkai MDF</h3>
+                        <p class="text-slate-300 text-xs mt-2 line-clamp-2">Produksi poster kayu bertema musik band legendaris dengan finishing laminasi tahan lama.</p>
+                    </div>
+                </div>
+
+                <!-- Project 8: Infografis Rapihaler -->
+                <div class="project-item infographic glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/9] bg-gradient-to-br from-emerald-950 to-teal-900 flex items-center justify-center p-4 border-b border-white/10">
+                        <div class="text-center">
+                            <p class="text-emerald-400 font-extrabold text-sm">PANDUAN RAPIHALER</p>
+                            <p class="text-white text-xs mt-0.5">6 Langkah Cara Pakai Inhaler</p>
+                        </div>
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button onclick="openProjectModal('Infografis Edukasi Rapihaler', 'Layout Infografis Edukasi Kesehatan', 'CorelDRAW / Illustrator', 'Infografis edukasi medis petunjuk langkah demi langkah penggunaan Rapihaler (pMDI inhaler semprot) secara aman & tepat. Dilengkapi ilustrasi vektor komunikatif.')" class="px-4 py-2 rounded-lg bg-brand-500 text-slate-950 text-xs font-bold flex items-center gap-2">
+                                <i data-lucide="eye" class="w-4 h-4"></i> Detail Proyek
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Infografis Medis</span>
+                            <span class="text-xs text-slate-400">Edukasi Publik</span>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">Edukasi Penggunaan Rapihaler</h3>
+                        <p class="text-slate-300 text-xs mt-2 line-clamp-2">Poster edukasi kesehatan langkah demi langkah cara pemakaian inhaler pMDI secara presisi.</p>
+                    </div>
+                </div>
+
+                <!-- Project 9: Infografis P.1 - P.6 Kemasan Obat -->
+                <div class="project-item infographic glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/9] bg-gradient-to-br from-blue-950 to-indigo-900 flex items-center justify-center p-4 border-b border-white/10">
+                        <div class="text-center">
+                            <p class="text-blue-400 font-extrabold text-sm">ARTI TANDA P.1 - P.6</p>
+                            <p class="text-white text-xs mt-0.5">Peringatan Kemasan Obat Bebas</p>
+                        </div>
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button onclick="openProjectModal('Infografis Tanda P.1 - P.6 Kemasan Obat', 'Desain Edukasi Keamanan Obat', 'CorelDRAW / Photoshop', 'Infografis edukasi penggolongan obat publik berdasarkan Permenkes No. 28 Tahun 2022. Menjelaskan arti rincian tanda peringatan P.No 1 hingga P.No 6 pada obat bebas terbatas.')" class="px-4 py-2 rounded-lg bg-brand-500 text-slate-950 text-xs font-bold flex items-center gap-2">
+                                <i data-lucide="eye" class="w-4 h-4"></i> Detail Proyek
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30">Infografis Farmasi</span>
+                            <span class="text-xs text-slate-400">Edukasi Publik</span>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">Arti Tanda P.1–P.6 Obat Bebas</h3>
+                        <p class="text-slate-300 text-xs mt-2 line-clamp-2">Penyusunan informasi visual peringatan keselamatan penggunaan obat berdasarkan aturan resmi Kemenkes.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 relative z-10 bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-500 text-sm font-semibold tracking-wider uppercase">Langkah Karir</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Pengalaman Kerja</h2>
+                <p class="text-dark-textMuted mt-2">Rekam jejak profesional dalam manajemen produksi, desain grafis, dan operasional mesin digital.</p>
+            </div>
+
+            <div class="relative border-l-2 border-slate-800 ml-4 sm:ml-32 space-y-12">
+                
+                <!-- Exp 1 -->
+                <div class="relative pl-8 sm:pl-10 group">
+                    <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-900 border-2 border-brand-500 flex items-center justify-center group-hover:scale-110 transition-transform shadow-glow">
+                        <i data-lucide="award" class="w-4 h-4 text-brand-500"></i>
+                    </div>
+                    <div class="hidden sm:block absolute -left-36 top-2 text-right w-28 text-xs font-bold text-brand-500 uppercase tracking-wider">
+                        Sep 2023 - Feb 2026
+                    </div>
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <span class="sm:hidden inline-block px-3 py-1 mb-3 rounded-full text-xs font-bold bg-brand-500/10 text-brand-500 border border-brand-500/20">
+                            Sep 2023 - Feb 2026
+                        </span>
+                        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                            Supervisor Produksi Percetakan
+                            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-normal border border-emerald-500/30">Terbaru</span>
+                        </h3>
+                        <p class="text-brand-500 font-medium text-sm mt-0.5">Berlian Printing</p>
+                        <ul class="mt-4 space-y-2 text-slate-300 text-sm">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent mt-0.5 shrink-0"></i>
+                                <span>Menjaga hubungan harmonis dan profesional dengan tim internal serta konsumen.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent mt-0.5 shrink-0"></i>
+                                <span>Mengontrol dan menjaga kualitas hasil produksi standar tinggi demi kepuasan pelanggan.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent mt-0.5 shrink-0"></i>
+                                <span>Mengelola waktu pengerjaan proyek serta akurasi estimasi pengiriman barang.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent mt-0.5 shrink-0"></i>
+                                <span>Memimpin evaluasi mingguan performa tim untuk meningkatkan efisiensi operasional.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Exp 2 -->
+                <div class="relative pl-8 sm:pl-10 group">
+                    <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-900 border-2 border-slate-700 group-hover:border-brand-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="palette" class="w-4 h-4 text-slate-400 group-hover:text-brand-500"></i>
+                    </div>
+                    <div class="hidden sm:block absolute -left-36 top-2 text-right w-28 text-xs font-bold text-dark-textMuted uppercase tracking-wider">
+                        Jul 2021 - Jul 2023
+                    </div>
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <span class="sm:hidden inline-block px-3 py-1 mb-3 rounded-full text-xs font-bold bg-slate-800 text-slate-300">
+                            Jul 2021 - Jul 2023
+                        </span>
+                        <h3 class="text-xl font-bold text-white">Desain Grafis</h3>
+                        <p class="text-brand-500 font-medium text-sm mt-0.5">CV. Sanjayaprint</p>
+                        <p class="text-slate-400 text-sm mt-2 italic">
+                            Berpengalaman selama 2 tahun spesifik di divisi desain grafis percetakan menggunakan software CorelDraw, Photoshop, dan InDesign.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-slate-300 text-sm">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent mt-0.5 shrink-0"></i>
+                                <span>Menerima, mengecek, dan mengolah file siap cetak (pre-press handling).</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent mt-0.5 shrink-0"></i>
+                                <span>Merancang dan merumuskan konsep desain kreatif sesuai kebutuhan kustom pelanggan.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Exp 3 -->
+                <div class="relative pl-8 sm:pl-10 group">
+                    <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-900 border-2 border-slate-700 group-hover:border-brand-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="printer" class="w-4 h-4 text-slate-400 group-hover:text-brand-500"></i>
+                    </div>
+                    <div class="hidden sm:block absolute -left-36 top-2 text-right w-28 text-xs font-bold text-dark-textMuted uppercase tracking-wider">
+                        Jun 2018 - Jun 2021
+                    </div>
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <span class="sm:hidden inline-block px-3 py-1 mb-3 rounded-full text-xs font-bold bg-slate-800 text-slate-300">
+                            Jun 2018 - Jun 2021
+                        </span>
+                        <h3 class="text-xl font-bold text-white">Operator Mesin Digital</h3>
+                        <p class="text-brand-500 font-medium text-sm mt-0.5">Dayprint</p>
+                        <ul class="mt-4 space-y-2 text-slate-300 text-sm">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent mt-0.5 shrink-0"></i>
+                                <span>Memelihara dan melakukan pembersihan berkala pada mesin printing digital.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent mt-0.5 shrink-0"></i>
+                                <span>Mengoperasikan mesin spanduk/outdoor secara presisi sesuai SOP.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-accent mt-0.5 shrink-0"></i>
+                                <span>Membuat laporan persediaan bahan (tinta, bahan spanduk, backlit, sticker oneway).</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brand-500 text-sm font-semibold tracking-wider uppercase">Matriks Keahlian</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Kompetensi Utama</h2>
+                <p class="text-dark-textMuted mt-2">Kombinasi antara keahlian teknis desain, TI, dan manajemen operasional.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 rounded-xl bg-orange-500/10 text-orange-400 border border-orange-500/20">
+                                <i data-lucide="vector" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="font-bold text-white">CorelDRAW</h4>
+                        </div>
+                        <span class="text-xs font-bold text-brand-500">Sangat Mahir</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-brand-500 to-brand-accent h-2 rounded-full w-[92%]"></div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                                <i data-lucide="image" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="font-bold text-white">Adobe Photoshop</h4>
+                        </div>
+                        <span class="text-xs font-bold text-brand-500">Mahir</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-brand-500 to-brand-accent h-2 rounded-full w-[88%]"></div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                                <i data-lucide="database" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="font-bold text-white">MySQL & Informatics</h4>
+                        </div>
+                        <span class="text-xs font-bold text-brand-500">Menengah</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-brand-500 to-brand-accent h-2 rounded-full w-[78%]"></div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                                <i data-lucide="users" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="font-bold text-white">Team Leadership</h4>
+                        </div>
+                        <span class="text-xs font-bold text-brand-500">Sangat Baik</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-brand-500 to-brand-accent h-2 rounded-full w-[95%]"></div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                                <i data-lucide="trending-up" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="font-bold text-white">Digital Marketing</h4>
+                        </div>
+                        <span class="text-xs font-bold text-brand-500">Menengah</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-brand-500 to-brand-accent h-2 rounded-full w-[72%]"></div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                                <i data-lucide="printer" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="font-bold text-white">Mesin Cetak & Pre-Press</h4>
+                        </div>
+                        <span class="text-xs font-bold text-brand-500">Sangat Mahir</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-brand-500 to-brand-accent h-2 rounded-full w-[90%]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards" class="py-20 relative z-10 bg-slate-950/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="p-3 rounded-2xl bg-brand-500/10 text-brand-500 border border-brand-500/20">
+                            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-white">Pendidikan Formal</h2>
+                            <p class="text-xs text-dark-textMuted">Kualifikasi akademis resmi</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-6 sm:p-8 relative overflow-hidden">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                            Sarjana (S1)
+                        </span>
+                        <h3 class="text-xl font-bold text-white mt-4">S1 Teknik Informatika</h3>
+                        <p class="text-brand-500 font-medium text-sm mt-1">Universitas Nasional Pasim</p>
+                        <p class="text-slate-300 text-sm mt-4 leading-relaxed">
+                            Mempelajari rekayasa perangkat lunak, sistem basis data, algoritma, serta penerapan teknologi informasi modern dalam solusi bisnis dan media komunikasi visual.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="p-3 rounded-2xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                            <i data-lucide="trophy" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-white">Penghargaan Kerja</h2>
+                            <p class="text-xs text-dark-textMuted">Apresiasi atas integritas & kedisiplinan</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card rounded-2xl p-6 flex items-start gap-4">
+                            <div class="p-3 rounded-xl bg-amber-500/10 text-amber-400 shrink-0 border border-amber-500/20">
+                                <i data-lucide="star" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center flex-wrap gap-2">
+                                    <h3 class="font-bold text-white">Leader Operasional Sangat Baik</h3>
+                                    <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-slate-800 text-amber-400">Jan 2025</span>
+                                </div>
+                                <p class="text-xs text-slate-400 mt-1">
+                                    Apresiasi leader produksi sangat baik dinilai dari kejujuran, kedisiplinan, serta manajemen waktu operasional.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card rounded-2xl p-6 flex items-start gap-4">
+                            <div class="p-3 rounded-xl bg-blue-500/10 text-blue-400 shrink-0 border border-blue-500/20">
+                                <i data-lucide="clock" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center flex-wrap gap-2">
+                                    <h3 class="font-bold text-white">Penghargaan Disiplin Waktu</h3>
+                                    <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-slate-800 text-blue-400">Jan 2021</span>
+                                </div>
+                                <p class="text-xs text-slate-400 mt-1">
+                                    Diberikan atas konsistensi hadir di tempat kerja 15 menit sebelum jam kerja dimulai.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="organization" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-500 text-sm font-semibold tracking-wider uppercase">Kepemimpinan</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Pengalaman Organisasi</h2>
+                <p class="text-dark-textMuted mt-2">Keterlibatan aktif dalam organisasi kemahasiswaan dan kemasyarakatan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card rounded-2xl p-6">
+                    <span class="text-xs font-bold text-brand-500">Mar 2023 - Des 2023</span>
+                    <h3 class="text-lg font-bold text-white mt-2">Komisi I</h3>
+                    <p class="text-xs font-medium text-slate-400 mb-3">Dewan Perwakilan Mahasiswa (DPM)</p>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Membuat, menganalisis, serta mengesahkan perundang-undangan Organisasi Mahasiswa (ORMAWA).
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6">
+                    <span class="text-xs font-bold text-brand-accent">Jul 2022 - Jul 2023</span>
+                    <h3 class="text-lg font-bold text-white mt-2">Wakil Ketua</h3>
+                    <p class="text-xs font-medium text-slate-400 mb-3">Karang Taruna</p>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Membantu ketua dalam pelaksanaan kegiatan, memimpin rapat internal, serta mengordinasi program kemasyarakatan.
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6">
+                    <span class="text-xs font-bold text-brand-500">Mar 2022 - Mar 2023</span>
+                    <h3 class="text-lg font-bold text-white mt-2">Kominfo</h3>
+                    <p class="text-xs font-medium text-slate-400 mb-3">Himpunan Mahasiswa Teknik Informatika</p>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Menjadi sarana informasi publikasi digital, merancang konsep visual, dan mengelola media sosial himpunan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <p class="text-sm font-bold text-white">Dani Ramdani</p>
+                    <p class="text-xs text-dark-textMuted mt-1">Personal Portfolio & Professional Branding © 2026.</p>
+                </div>
+
+                <div class="flex items-center gap-6 text-slate-400 text-sm">
+                    <a href="mailto:daramdan2001@gmail.com" class="hover:text-brand-500 flex items-center gap-1 transition-colors">
+                        <i data-lucide="mail" class="w-4 h-4"></i> daramdan2001@gmail.com
+                    </a>
+                    <a href="https://wa.me/628382547239" target="_blank" class="hover:text-brand-500 flex items-center gap-1 transition-colors">
+                        <i data-lucide="phone" class="w-4 h-4"></i> +62 838-2547-239
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
+        <div class="glass-card rounded-3xl p-6 sm:p-8 max-w-lg w-full relative border border-white/10 shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <h3 class="text-2xl font-bold text-white">Hubungi Dani Ramdani</h3>
+            <p class="text-xs text-dark-textMuted mt-1">Silakan hubungi kontak resmi untuk konsultasi proyek desain & cetak.</p>
+
+            <div class="mt-6 space-y-4">
+                <a href="https://wa.me/628382547239" target="_blank" class="p-4 rounded-2xl glass-card flex items-center justify-between hover:bg-emerald-500/10 hover:border-emerald-500/30 transition-all group">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 rounded-xl bg-emerald-500/20 text-emerald-400">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">WhatsApp Direct</p>
+                            <p class="text-xs text-slate-400">+62 838-2547-239</p>
+                        </div>
+                    </div>
+                    <i data-lucide="arrow-right" class="w-5 h-5 text-slate-500 group-hover:text-emerald-400 transition-colors"></i>
+                </a>
+
+                <a href="mailto:daramdan2001@gmail.com" class="p-4 rounded-2xl glass-card flex items-center justify-between hover:bg-brand-500/10 hover:border-brand-500/30 transition-all group">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 rounded-xl bg-brand-500/20 text-brand-500">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Email Resmi</p>
+                            <p class="text-xs text-slate-400">daramdan2001@gmail.com</p>
+                        </div>
+                    </div>
+                    <i data-lucide="arrow-right" class="w-5 h-5 text-slate-500 group-hover:text-brand-500 transition-colors"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
+        <div class="glass-card rounded-3xl p-6 sm:p-8 max-w-xl w-full relative border border-white/10 shadow-2xl">
+            <button onclick="closeProjectModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <span id="pmodal-category" class="text-xs font-bold px-2.5 py-1 rounded bg-brand-500/20 text-brand-400 border border-brand-500/30 uppercase">
+                Detail Proyek
+            </span>
+            <h3 id="pmodal-title" class="text-2xl font-bold text-white mt-3">Judul Proyek</h3>
+            <p id="pmodal-tools" class="text-xs font-semibold text-brand-accent mt-1">Tools: CorelDRAW / Photoshop</p>
+
+            <div class="mt-4 p-4 rounded-xl bg-slate-900/60 border border-white/5">
+                <p id="pmodal-desc" class="text-sm text-slate-300 leading-relaxed">Deskripsi proyek akan tampil di sini...</p>
+            </div>
+
+            <div class="mt-6 flex justify-end">
+                <button onclick="closeProjectModal()" class="px-5 py-2 rounded-xl bg-slate-800 text-slate-200 text-xs font-semibold hover:bg-slate-700">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+
+        // Mobile Nav
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        function toggleMenu() { mobileMenu.classList.toggle('hidden'); }
+        menuBtn.addEventListener('click', toggleMenu);
+
+        // Contact Modal
+        const modal = document.getElementById('contact-modal');
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => modal.classList.remove('opacity-0'), 10);
+        }
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+
+        // Project Detail Modal
+        const pmodal = document.getElementById('project-modal');
+        function openProjectModal(title, category, tools, desc) {
+            document.getElementById('pmodal-title').innerText = title;
+            document.getElementById('pmodal-category').innerText = category;
+            document.getElementById('pmodal-tools').innerText = 'Software / Media: ' + tools;
+            document.getElementById('pmodal-desc').innerText = desc;
+            
+            pmodal.classList.remove('hidden');
+            setTimeout(() => pmodal.classList.remove('opacity-0'), 10);
+        }
+        function closeProjectModal() {
+            pmodal.classList.add('opacity-0');
+            setTimeout(() => pmodal.classList.add('hidden'), 300);
+        }
+
+        // Portfolio Filtering
+        function filterProjects(category) {
+            const items = document.querySelectorAll('.project-item');
+            const buttons = document.querySelectorAll('.p-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-500', 'text-slate-950');
+                btn.classList.add('glass-card', 'text-slate-300');
+            });
+
+            const activeBtn = document.getElementById(`pbtn-${category}`);
+            if(activeBtn) {
+                activeBtn.classList.remove('glass-card', 'text-slate-300');
+                activeBtn.classList.add('bg-brand-500', 'text-slate-950');
+            }
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
